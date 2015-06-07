@@ -162,6 +162,18 @@
 		3F094D001B22EE290037D3F4 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F094CFF1B22EE290037D3F4 /* MoreViewController.m */; };
 		3F11988D1B24455200E16130 /* AboutMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F11988B1B24455200E16130 /* AboutMeController.m */; };
 		3F11988E1B24455200E16130 /* AboutMeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F11988C1B24455200E16130 /* AboutMeController.xib */; };
+		3F1198AB1B245CF500E16130 /* UMSocialLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F1198901B245CF500E16130 /* UMSocialLocalizable.strings */; };
+		3F1198AC1B245CF500E16130 /* libUMSocial_Sdk_4.2.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F11989E1B245CF500E16130 /* libUMSocial_Sdk_4.2.3.a */; };
+		3F1198AD1B245CF500E16130 /* libUMSocial_Sdk_Comment_4.2.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F11989F1B245CF500E16130 /* libUMSocial_Sdk_Comment_4.2.3.a */; };
+		3F1198AE1B245CF500E16130 /* UMSCommentDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1198A11B245CF500E16130 /* UMSCommentDetailController.xib */; };
+		3F1198AF1B245CF500E16130 /* UMSCommentInputController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1198A21B245CF500E16130 /* UMSCommentInputController.xib */; };
+		3F1198B01B245CF500E16130 /* UMSCommentInputControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1198A31B245CF500E16130 /* UMSCommentInputControlleriPad.xib */; };
+		3F1198B11B245CF500E16130 /* UMShareEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1198A41B245CF500E16130 /* UMShareEditViewController.xib */; };
+		3F1198B21B245CF500E16130 /* UMShareEditViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1198A51B245CF500E16130 /* UMShareEditViewControlleriPad.xib */; };
+		3F1198B31B245CF500E16130 /* UMSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1198A61B245CF500E16130 /* UMSLoginViewController.xib */; };
+		3F1198B41B245CF500E16130 /* UMSnsAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1198A71B245CF500E16130 /* UMSnsAccountViewController.xib */; };
+		3F1198B51B245CF500E16130 /* UMSShareListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1198A81B245CF500E16130 /* UMSShareListController.xib */; };
+		3F1198B61B245CF500E16130 /* UMSocialSDKResourcesNew.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3F1198A91B245CF500E16130 /* UMSocialSDKResourcesNew.bundle */; };
 		3FB0FE9B1B22EF1800ED83B7 /* MainNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB0FE9A1B22EF1800ED83B7 /* MainNavViewController.m */; };
 		3FB0FE9E1B22EF2D00ED83B7 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB0FE9D1B22EF2D00ED83B7 /* MainTabBarController.m */; };
 		3FB0FEA61B22F3D500ED83B7 /* navigationbar_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB0FEA01B22F3D500ED83B7 /* navigationbar_more@2x.png */; };
@@ -434,6 +446,30 @@
 		3F11988A1B24455200E16130 /* AboutMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMeController.h; sourceTree = "<group>"; };
 		3F11988B1B24455200E16130 /* AboutMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMeController.m; sourceTree = "<group>"; };
 		3F11988C1B24455200E16130 /* AboutMeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutMeController.xib; sourceTree = "<group>"; };
+		3F1198911B245CF500E16130 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UMSocialLocalizable.strings; sourceTree = "<group>"; };
+		3F1198931B245CF500E16130 /* UMSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocial.h; sourceTree = "<group>"; };
+		3F1198941B245CF500E16130 /* UMSocialAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialAccountManager.h; sourceTree = "<group>"; };
+		3F1198951B245CF500E16130 /* UMSocialBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialBar.h; sourceTree = "<group>"; };
+		3F1198961B245CF500E16130 /* UMSocialConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialConfig.h; sourceTree = "<group>"; };
+		3F1198971B245CF500E16130 /* UMSocialControllerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialControllerService.h; sourceTree = "<group>"; };
+		3F1198981B245CF500E16130 /* UMSocialControllerServiceComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialControllerServiceComment.h; sourceTree = "<group>"; };
+		3F1198991B245CF500E16130 /* UMSocialData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialData.h; sourceTree = "<group>"; };
+		3F11989A1B245CF500E16130 /* UMSocialDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialDataService.h; sourceTree = "<group>"; };
+		3F11989B1B245CF500E16130 /* UMSocialSnsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSnsData.h; sourceTree = "<group>"; };
+		3F11989C1B245CF500E16130 /* UMSocialSnsPlatformManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSnsPlatformManager.h; sourceTree = "<group>"; };
+		3F11989D1B245CF500E16130 /* UMSocialSnsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSnsService.h; sourceTree = "<group>"; };
+		3F11989E1B245CF500E16130 /* libUMSocial_Sdk_4.2.3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMSocial_Sdk_4.2.3.a; sourceTree = "<group>"; };
+		3F11989F1B245CF500E16130 /* libUMSocial_Sdk_Comment_4.2.3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMSocial_Sdk_Comment_4.2.3.a; sourceTree = "<group>"; };
+		3F1198A11B245CF500E16130 /* UMSCommentDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSCommentDetailController.xib; sourceTree = "<group>"; };
+		3F1198A21B245CF500E16130 /* UMSCommentInputController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSCommentInputController.xib; sourceTree = "<group>"; };
+		3F1198A31B245CF500E16130 /* UMSCommentInputControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSCommentInputControlleriPad.xib; sourceTree = "<group>"; };
+		3F1198A41B245CF500E16130 /* UMShareEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMShareEditViewController.xib; sourceTree = "<group>"; };
+		3F1198A51B245CF500E16130 /* UMShareEditViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMShareEditViewControlleriPad.xib; sourceTree = "<group>"; };
+		3F1198A61B245CF500E16130 /* UMSLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSLoginViewController.xib; sourceTree = "<group>"; };
+		3F1198A71B245CF500E16130 /* UMSnsAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSnsAccountViewController.xib; sourceTree = "<group>"; };
+		3F1198A81B245CF500E16130 /* UMSShareListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSShareListController.xib; sourceTree = "<group>"; };
+		3F1198A91B245CF500E16130 /* UMSocialSDKResourcesNew.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKResourcesNew.bundle; sourceTree = "<group>"; };
+		3F1198AA1B245CF500E16130 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/UMSocialLocalizable.strings"; sourceTree = "<group>"; };
 		3FB0FE991B22EF1800ED83B7 /* MainNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavViewController.h; sourceTree = "<group>"; };
 		3FB0FE9A1B22EF1800ED83B7 /* MainNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavViewController.m; sourceTree = "<group>"; };
 		3FB0FE9C1B22EF2D00ED83B7 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
@@ -461,7 +497,9 @@
 			files = (
 				004721B01AFA1F4600CC75FD /* CoreGraphics.framework in Frameworks */,
 				004721AE1AFA1F3A00CC75FD /* QuartzCore.framework in Frameworks */,
+				3F1198AD1B245CF500E16130 /* libUMSocial_Sdk_Comment_4.2.3.a in Frameworks */,
 				0034A6751AF74495003BF7E8 /* SystemConfiguration.framework in Frameworks */,
+				3F1198AC1B245CF500E16130 /* libUMSocial_Sdk_4.2.3.a in Frameworks */,
 				0034A6731AF74463003BF7E8 /* UIKit.framework in Frameworks */,
 				0034A6711AF74432003BF7E8 /* Security.framework in Frameworks */,
 				0034A66F1AF74428003BF7E8 /* CoreTelephony.framework in Frameworks */,
@@ -720,6 +758,7 @@
 		003BE5571AF677EE00BBD229 = {
 			isa = PBXGroup;
 			children = (
+				3F11988F1B245CF500E16130 /* UMSocial_Sdk_4.2.3 */,
 				004721B41AFA284D00CC75FD /* View */,
 				004721AF1AFA1F4600CC75FD /* CoreGraphics.framework */,
 				004721AD1AFA1F3A00CC75FD /* QuartzCore.framework */,
@@ -1030,6 +1069,52 @@
 			path = "更多";
 			sourceTree = "<group>";
 		};
+		3F11988F1B245CF500E16130 /* UMSocial_Sdk_4.2.3 */ = {
+			isa = PBXGroup;
+			children = (
+				3F1198901B245CF500E16130 /* UMSocialLocalizable.strings */,
+				3F1198921B245CF500E16130 /* Header */,
+				3F11989E1B245CF500E16130 /* libUMSocial_Sdk_4.2.3.a */,
+				3F11989F1B245CF500E16130 /* libUMSocial_Sdk_Comment_4.2.3.a */,
+				3F1198A01B245CF500E16130 /* SocialSDKXib */,
+				3F1198A91B245CF500E16130 /* UMSocialSDKResourcesNew.bundle */,
+			);
+			path = UMSocial_Sdk_4.2.3;
+			sourceTree = "<group>";
+		};
+		3F1198921B245CF500E16130 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				3F1198931B245CF500E16130 /* UMSocial.h */,
+				3F1198941B245CF500E16130 /* UMSocialAccountManager.h */,
+				3F1198951B245CF500E16130 /* UMSocialBar.h */,
+				3F1198961B245CF500E16130 /* UMSocialConfig.h */,
+				3F1198971B245CF500E16130 /* UMSocialControllerService.h */,
+				3F1198981B245CF500E16130 /* UMSocialControllerServiceComment.h */,
+				3F1198991B245CF500E16130 /* UMSocialData.h */,
+				3F11989A1B245CF500E16130 /* UMSocialDataService.h */,
+				3F11989B1B245CF500E16130 /* UMSocialSnsData.h */,
+				3F11989C1B245CF500E16130 /* UMSocialSnsPlatformManager.h */,
+				3F11989D1B245CF500E16130 /* UMSocialSnsService.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		3F1198A01B245CF500E16130 /* SocialSDKXib */ = {
+			isa = PBXGroup;
+			children = (
+				3F1198A11B245CF500E16130 /* UMSCommentDetailController.xib */,
+				3F1198A21B245CF500E16130 /* UMSCommentInputController.xib */,
+				3F1198A31B245CF500E16130 /* UMSCommentInputControlleriPad.xib */,
+				3F1198A41B245CF500E16130 /* UMShareEditViewController.xib */,
+				3F1198A51B245CF500E16130 /* UMShareEditViewControlleriPad.xib */,
+				3F1198A61B245CF500E16130 /* UMSLoginViewController.xib */,
+				3F1198A71B245CF500E16130 /* UMSnsAccountViewController.xib */,
+				3F1198A81B245CF500E16130 /* UMSShareListController.xib */,
+			);
+			path = SocialSDKXib;
+			sourceTree = "<group>";
+		};
 		3FB0FE981B22EF0300ED83B7 /* 自定义控制器 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1158,6 +1243,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 003BE5571AF677EE00BBD229;
 			productRefGroup = 003BE5611AF677EE00BBD229 /* Products */;
@@ -1177,6 +1263,7 @@
 			files = (
 				3F11988E1B24455200E16130 /* AboutMeController.xib in Resources */,
 				00F4F7A51AF7C0DD0090492D /* feed_tab_butten_normal@3x.png in Resources */,
+				3F1198AF1B245CF500E16130 /* UMSCommentInputController.xib in Resources */,
 				00F4F7BE1AF7C0DD0090492D /* opened_liked_icon@3x.png in Resources */,
 				00F4F7B81AF7C0DD0090492D /* notice_tab_butten_press.png in Resources */,
 				00F4F7C41AF7C0DD0090492D /* unselect_icon@3x.png in Resources */,
@@ -1186,10 +1273,13 @@
 				00F4F7A31AF7C0DD0090492D /* feed_tab_butten_normal.png in Resources */,
 				00F4F7BC1AF7C0DD0090492D /* opened_like_icon@3x.png in Resources */,
 				3FB0FEA71B22F3D500ED83B7 /* navigationbar_more@3x.png in Resources */,
+				3F1198B61B245CF500E16130 /* UMSocialSDKResourcesNew.bundle in Resources */,
+				3F1198AB1B245CF500E16130 /* UMSocialLocalizable.strings in Resources */,
 				00F4F7B01AF7C0DD0090492D /* movie_tab_butten_normal@2x.png in Resources */,
 				00BF942C1B235068003D0709 /* icon_180 copy@3x.png in Resources */,
 				00F4F7B11AF7C0DD0090492D /* movie_tab_butten_normal@3x.png in Resources */,
 				00BF94331B235068003D0709 /* icon_57 copy.png in Resources */,
+				3F1198AE1B245CF500E16130 /* UMSCommentDetailController.xib in Resources */,
 				00F4F7B91AF7C0DD0090492D /* notice_tab_butten_press@2x.png in Resources */,
 				00368EAF1B2402C10013B1A1 /* view_withe_backgroud.png in Resources */,
 				00BF94311B235068003D0709 /* icon_40 copy@2x.png in Resources */,
@@ -1211,16 +1301,20 @@
 				00368EA71B23F8060013B1A1 /* moments_share_icon@3x.png in Resources */,
 				3FB0FEA91B22F3D500ED83B7 /* navigationbar_more_disable@3x.png in Resources */,
 				00A5FF551AF8B6EC0055CCDA /* MJRefresh.bundle in Resources */,
+				3F1198B11B245CF500E16130 /* UMShareEditViewController.xib in Resources */,
 				00F4F7C11AF7C0DD0090492D /* selected_icon@2x.png in Resources */,
+				3F1198B41B245CF500E16130 /* UMSnsAccountViewController.xib in Resources */,
 				00F4F7B31AF7C0DD0090492D /* movie_tab_butten_press@2x.png in Resources */,
 				00F4F7A41AF7C0DD0090492D /* feed_tab_butten_normal@2x.png in Resources */,
 				00F4F7BB1AF7C0DD0090492D /* opened_like_icon@2x.png in Resources */,
+				3F1198B31B245CF500E16130 /* UMSLoginViewController.xib in Resources */,
 				00BF942B1B235068003D0709 /* icon_114 copy.png in Resources */,
 				00F4F7AC1AF7C0DD0090492D /* me_tab_butten_press.png in Resources */,
 				00F4F7B21AF7C0DD0090492D /* movie_tab_butten_press.png in Resources */,
 				00BF942A1B235068003D0709 /* icon_1024.png in Resources */,
 				00F4F7A91AF7C0DD0090492D /* me_tab_butten_normal.png in Resources */,
 				3FB0FEA81B22F3D500ED83B7 /* navigationbar_more_disable.png in Resources */,
+				3F1198B51B245CF500E16130 /* UMSShareListController.xib in Resources */,
 				00368EAA1B23F8060013B1A1 /* wechat_share_icon@2x.png in Resources */,
 				00F4F7BD1AF7C0DD0090492D /* opened_liked_icon@2x.png in Resources */,
 				00BF942D1B235068003D0709 /* icon_28 copy.png in Resources */,
@@ -1232,6 +1326,8 @@
 				00368EA61B23F8060013B1A1 /* moments_share_icon@2x.png in Resources */,
 				00F4F7C01AF7C0DD0090492D /* opened_share_icon@3x.png in Resources */,
 				00F4F7AA1AF7C0DD0090492D /* me_tab_butten_normal@2x.png in Resources */,
+				3F1198B01B245CF500E16130 /* UMSCommentInputControlleriPad.xib in Resources */,
+				3F1198B21B245CF500E16130 /* UMShareEditViewControlleriPad.xib in Resources */,
 				00F4F7AB1AF7C0DD0090492D /* me_tab_butten_normal@3x.png in Resources */,
 				00F4F7C21AF7C0DD0090492D /* selected_icon@3x.png in Resources */,
 				00F4F7B41AF7C0DD0090492D /* movie_tab_butten_press@3x.png in Resources */,
@@ -1419,6 +1515,15 @@
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
+		3F1198901B245CF500E16130 /* UMSocialLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F1198911B245CF500E16130 /* en */,
+				3F1198AA1B245CF500E16130 /* zh-Hans */,
+			);
+			name = UMSocialLocalizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -1513,6 +1618,10 @@
 				INFOPLIST_FILE = "测试使用侧边栏/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UMSocial_Sdk_4.2.3",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1526,6 +1635,10 @@
 				INFOPLIST_FILE = "测试使用侧边栏/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UMSocial_Sdk_4.2.3",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

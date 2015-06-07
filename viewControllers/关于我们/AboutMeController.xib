@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropdown_anim__00049" translatesAutoresizingMaskIntoConstraints="NO" id="Rfy-Kf-RuB">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_1024.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rfy-Kf-RuB">
                     <rect key="frame" x="200" y="58" width="200" height="200"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="200" id="H2C-49-I7X"/>
@@ -35,7 +35,7 @@
 
 </string>
                     <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
             </subviews>
@@ -49,6 +49,6 @@
         </view>
     </objects>
     <resources>
-        <image name="dropdown_anim__00049" width="50" height="50"/>
+        <image name="icon_1024.png" width="1024" height="1024"/>
     </resources>
 </document>
