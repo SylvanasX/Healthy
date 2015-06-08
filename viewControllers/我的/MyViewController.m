@@ -56,6 +56,7 @@
 - (void)loadDataFromDB {
     self.page++;
     [self.models addObjectsFromArray:[NewModelTool newModelsFromDB:self.page]];
+    NSLog(@"%@", self.models);
 }
 
 #pragma mark - UITableViewDataSource
@@ -66,15 +67,20 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellID = @"cellID";
     NewTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
-    if (!cellID) {
+    if (!cell) {
         cell = [[NewTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
     }
     newModel *model = self.models[indexPath.row];
     cell.model = model;
     cell.pageType = NSPageTypeNewListController;
-//    [cell setCellValueforRowIndex:indexPath.row];
+    [cell setCellValueforRowIndex:indexPath.row];
     return cell;
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 100;
+}
+
 
 
 @end
