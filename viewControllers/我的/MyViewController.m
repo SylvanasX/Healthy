@@ -38,19 +38,17 @@
     // 从数据库中加载数据
     [self loadDataFromDB];
     // 刷新tableView
-    [self.tableView reloadData];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(collectChange:) name:collectNSNotification object:nil];
+    [self setupFooterRefresh];
+    [self.tableView reloadData];
 }
 
+- (void)setupFooterRefresh {
+    [self.tableView addLegendFooterWithRefreshingTarget:self refreshingAction:@selector(loadDataFromDB)];
+}
+
+
 - (void)collectChange:(NSNotification *)notification {
-//    NSDictionary *userInfo = notification.userInfo;
-//    newModel *model = userInfo[collectModel];
-//    if ([userInfo[isCollectKey] boolValue]) {
-//        [self.models insertObject:model atIndex:0];
-//    } else {
-//        [self.models removeObject:model];
-//    }
-//    [self.tableView reloadData];
     [self.models removeAllObjects];
     self.page = 0;
     [self loadDataFromDB];
@@ -73,9 +71,11 @@
 }
 
 - (void)loadDataFromDB {
+    self.tableView.footer.hidden = NO;
     self.page++;
     [self.models addObjectsFromArray:[NewModelTool newModelsFromDB:self.page]];
-    NSLog(@"%@", self.models);
+    [self.tableView.footer endRefreshing];
+    self.tableView.footer.hidden = YES;
 }
 
 #pragma mark - UITableViewDataSource

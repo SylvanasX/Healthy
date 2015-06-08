@@ -16,7 +16,7 @@
 #import "NeDetailViewController.h"
 #import "MJRefresh.h"
 #import "MyViewController.h"
-
+#import "CollectViewController.h"
 @interface NewViewController ()<UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate>
 {
     int page;
@@ -112,8 +112,9 @@
 }
 -(void)handMyClick
 {
-   [self.navigationController pushViewController:[MyViewController new] animated:YES];
+   [self.navigationController pushViewController:[[CollectViewController alloc] init] animated:YES];
 }
+
 -(void)segmentClick:(UISegmentedControl *)seg
 {
    if(seg.selectedSegmentIndex==0)
