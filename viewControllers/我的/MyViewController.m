@@ -54,6 +54,7 @@
     [self.models removeAllObjects];
     self.page = 0;
     [self loadDataFromDB];
+    [self.tableView reloadData];
 }
 
 - (void)setupTableView {
@@ -108,7 +109,7 @@
     NeDetailViewController *newVc=[[NeDetailViewController alloc]init];
     newModel  *model;
     model = self.models[indexPath.row];
-    newVc.pageType=NSDetailPageTypeNewListController;
+    newVc.pageType=NSDetailPageTypeKnoleController;
     newVc.detailId=model.Id;
     newVc.detailName=model.title;
     newVc.listModel = model;
@@ -117,7 +118,5 @@
     
     [self.navigationController pushViewController:newVc animated:YES];
 }
-
-
 
 @end

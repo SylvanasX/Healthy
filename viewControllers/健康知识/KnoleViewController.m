@@ -261,6 +261,7 @@
     newModel  *model;
     newVc.pageType=NSDetailPageTypeKnoleController;
     model =[self.dataArray objectAtIndex:indexPath.row];
+    newVc.listModel = model;
     newVc.detailId=model.Id;
     newVc.detailName=model.title;
     [self.navigationController pushViewController:newVc animated:YES];
