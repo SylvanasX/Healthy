@@ -7,11 +7,12 @@
 //
 
 #import "newModel.h"
-
+#import "MJExtension.h"
 @implementation newModel
 -(void)setValue:(id)value forUndefinedKey:(NSString *)key
 {
     
 }
 
+MJCodingImplementation
 @end

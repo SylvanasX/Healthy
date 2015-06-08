@@ -13,7 +13,7 @@ typedef NS_ENUM(NSInteger,NSDetailPageSourceType)
   //  NSDetailPageTypeNewAllListController=102,
     NSDetailPageTypeKnoleController=101,
 };
-
+@class newModel;
 @interface NeDetailViewController : UIViewController
 
 @property(nonatomic,strong) NSString  *detailId;
@@ -22,5 +22,8 @@ typedef NS_ENUM(NSInteger,NSDetailPageSourceType)
 
 
 @property (nonatomic,assign) NSDetailPageSourceType    pageType;      //页面来源
-
+/**
+ *  列表传给详情的model
+ */
+@property (nonatomic, strong) newModel *listModel;
 @end

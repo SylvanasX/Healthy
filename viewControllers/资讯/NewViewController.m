@@ -16,6 +16,7 @@
 #import "NeDetailViewController.h"
 #import "MJRefresh.h"
 #import "MyViewController.h"
+
 @interface NewViewController ()<UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate>
 {
     int page;
@@ -344,6 +345,7 @@
             newModel *model =[[newModel alloc]init];
             if (model) {
                [model setValuesForKeysWithDictionary:dict];
+               NSLog(@"%@", model);
                if (self.dataArray==nil) {
                   self.dataArray=[[NSMutableArray alloc]init];
                }
@@ -387,6 +389,7 @@
                 newModel *model =[[newModel alloc]init];
                 if (model) {
                  [model setValuesForKeysWithDictionary:dict];
+                   NSLog(@"%@", model);
                    if (self.dataArray==nil) {
                       self.dataArray=[[NSMutableArray alloc]init];
                    }
@@ -500,6 +503,7 @@
    newVc.pageType=NSDetailPageTypeNewListController;
    newVc.detailId=model.Id;
    newVc.detailName=model.title;
+   newVc.listModel = model;
    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:nil action:nil];
    self.navigationItem.backBarButtonItem = backItem;
 

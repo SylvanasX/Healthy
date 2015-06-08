@@ -16,6 +16,7 @@
 #import "Helper.h"
 #import "UMShareView.h"
 #import "MMProgressHUD.h"
+#import "NewModelTool.h"
 #define TOOL_SHARE 100
 #define TOOL_COLLECTI  101
 @interface NeDetailViewController ()<UMShareViewDelegate>
@@ -86,7 +87,7 @@
     else if (item.tag==TOOL_COLLECTI)
     {
         
-        
+        [NewModelTool saveNewModel:self.listModel];
         
     }
     
