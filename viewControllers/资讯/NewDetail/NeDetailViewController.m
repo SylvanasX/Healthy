@@ -17,6 +17,8 @@
 #import "UMShareView.h"
 #import "MMProgressHUD.h"
 #import "NewModelTool.h"
+#import "UIBarButtonItem+Extension.h"
+#import "ConstNSNotification.h"
 #define TOOL_SHARE 100
 #define TOOL_COLLECTI  101
 @interface NeDetailViewController ()<UMShareViewDelegate>
@@ -38,12 +40,19 @@
 
 
 @property(strong,nonatomic)newModel  *model;
+
+@property (nonatomic, strong) UIButton *collectBtn;
 @end
 
 @implementation NeDetailViewController
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:YES];
+    if ([NewModelTool isCollected:self.listModel]) {
+        self.collectBtn.selected = YES;
+    } else {
+        self.collectBtn.selected = NO;
+    }
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -54,6 +63,7 @@
     [self configToolBar];
     [self requestNewDetail];
     //[self creatUI];
+    
 }
 -(void)createNavagtion
 {
@@ -70,14 +80,51 @@
     leftitem.tag=TOOL_SHARE;
     UIBarButtonItem  *space =[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
                                                                           target:nil action:nil];
-        UIBarButtonItem  *rightitem =[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(dealToolBarItemClick:)];
-    rightitem.tag=TOOL_COLLECTI;
+//    UIBarButtonItem  *rightitem =[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(dealToolBarItemClick:)];
+    UIBarButtonItem  *rightitem = [UIBarButtonItem itemWithTitle:nil image:@"like_nomoal" selectedImage:@"like_slected" target:self action:@selector(collectedClick:)];
+    rightitem.tag = TOOL_COLLECTI;
+    self.collectBtn = (UIButton *)rightitem.customView;
+    NSLog(@"%lx", rightitem.tag);
+    //[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(dealToolBarItemClick:)];
+    
+//    rightitem.tag=TOOL_COLLECTI;
     
     self.toolbarItems=@[leftitem,space,rightitem];
 }
+
+- (void)collectedClick:(UIButton *)btn {
+//    if ([NewModelTool isCollected:self.listModel]) {
+//        [NewModelTool removeNewModel:self.listModel];
+//        btn.selected = NO;
+//        NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+//        dic[isCollectKey] = @NO;
+//        dic[collectModel] = self.listModel;
+//        [[NSNotificationCenter defaultCenter] postNotificationName:collectNSNotification object:nil userInfo:dic];
+//    } else {
+//        [NewModelTool saveNewModel:self.listModel];
+//        btn.selected = YES;
+//        NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+//        dic[isCollectKey] = @YES;
+//        dic[collectModel] = self.listModel;
+//        [[NSNotificationCenter defaultCenter] postNotificationName:collectNSNotification object:nil userInfo:dic];
+//    }
+    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+    dic[collectModel] = self.listModel;
+    if (btn.isSelected) {
+        [NewModelTool removeNewModel:self.listModel];
+        dic[isCollectKey] = @NO;
+    } else {
+        [NewModelTool saveNewModel:self.listModel];
+        dic[isCollectKey] = @YES;
+    }
+    self.collectBtn.selected = !self.collectBtn.isSelected;
+    [[NSNotificationCenter defaultCenter] postNotificationName:collectNSNotification object:nil userInfo:dic];
+}
+
 //点击下方工具栏
 -(void)dealToolBarItemClick:(UIBarButtonItem *)item
 {
+
   if(item.tag==TOOL_SHARE)
   {
       //分享
@@ -86,8 +133,6 @@
   }
     else if (item.tag==TOOL_COLLECTI)
     {
-        
-        [NewModelTool saveNewModel:self.listModel];
         
     }
     

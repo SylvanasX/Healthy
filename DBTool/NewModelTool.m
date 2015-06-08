@@ -40,6 +40,15 @@ static FMDatabase *_db;
     }
     return array;
 }
-    
+
++ (BOOL)isCollected:(newModel *)model {
+    FMResultSet *set = [_db executeQueryWithFormat:@"SELECT COUNT(*) AS countNum FROM t_model WHERE newModelId = %@;", model.Id];
+    [set next];
+    return [set intForColumn:@"countNum"] == 1;
+}
+
++ (void)removeNewModel:(newModel *)model {
+    [_db executeUpdateWithFormat:@"DELETE FROM t_model WHERE newModelId = %@;", model.Id];
+}
 
 @end

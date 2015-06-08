@@ -188,6 +188,14 @@
 		3FB0FEB21B22F9AD00ED83B7 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB0FEAE1B22F9AD00ED83B7 /* MBProgressHUD+MJ.m */; };
 		3FB0FEB31B22F9AD00ED83B7 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3FB0FEAF1B22F9AD00ED83B7 /* MBProgressHUD.bundle */; };
 		3FB0FEB41B22F9AD00ED83B7 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB0FEB11B22F9AD00ED83B7 /* MBProgressHUD.m */; };
+		3FEB6F7E1B257CD100C1D96F /* CollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEB6F7D1B257CD100C1D96F /* CollectViewController.m */; };
+		3FEB6F841B257D1A00C1D96F /* like_nomoal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FEB6F801B257D1A00C1D96F /* like_nomoal@2x.png */; };
+		3FEB6F851B257D1A00C1D96F /* like_nomoal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FEB6F811B257D1A00C1D96F /* like_nomoal@3x.png */; };
+		3FEB6F861B257D1A00C1D96F /* like_slected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FEB6F821B257D1A00C1D96F /* like_slected@2x.png */; };
+		3FEB6F871B257D1A00C1D96F /* like_slected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FEB6F831B257D1A00C1D96F /* like_slected@3x.png */; };
+		3FEB6F8B1B25820E00C1D96F /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEB6F8A1B25820E00C1D96F /* UIBarButtonItem+Extension.m */; };
+		3FEB6F8E1B2582ED00C1D96F /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEB6F8D1B2582ED00C1D96F /* UIView+Extension.m */; };
+		3FEB6F911B258D1B00C1D96F /* ConstNSNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEB6F901B258D1B00C1D96F /* ConstNSNotification.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -495,6 +503,18 @@
 		3FB0FEAF1B22F9AD00ED83B7 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		3FB0FEB01B22F9AD00ED83B7 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		3FB0FEB11B22F9AD00ED83B7 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		3FEB6F7C1B257CD100C1D96F /* CollectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectViewController.h; sourceTree = "<group>"; };
+		3FEB6F7D1B257CD100C1D96F /* CollectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectViewController.m; sourceTree = "<group>"; };
+		3FEB6F801B257D1A00C1D96F /* like_nomoal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "like_nomoal@2x.png"; sourceTree = "<group>"; };
+		3FEB6F811B257D1A00C1D96F /* like_nomoal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "like_nomoal@3x.png"; sourceTree = "<group>"; };
+		3FEB6F821B257D1A00C1D96F /* like_slected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "like_slected@2x.png"; sourceTree = "<group>"; };
+		3FEB6F831B257D1A00C1D96F /* like_slected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "like_slected@3x.png"; sourceTree = "<group>"; };
+		3FEB6F891B25820E00C1D96F /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		3FEB6F8A1B25820E00C1D96F /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		3FEB6F8C1B2582ED00C1D96F /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		3FEB6F8D1B2582ED00C1D96F /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		3FEB6F8F1B258D1B00C1D96F /* ConstNSNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstNSNotification.h; sourceTree = "<group>"; };
+		3FEB6F901B258D1B00C1D96F /* ConstNSNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstNSNotification.m; sourceTree = "<group>"; };
 		5FF15C55B170F79F49FEA0CA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A0E7405415A0C5202EEEE94A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C525401536AE0DA835DEF9C8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -541,6 +561,7 @@
 		003466C81AF74149003BF7E8 /* Librariy */ = {
 			isa = PBXGroup;
 			children = (
+				3FEB6F881B2581FD00C1D96F /* Category */,
 				3F1198CA1B246A1F00E16130 /* MJExtension */,
 				3F1198B71B24684900E16130 /* fmdb */,
 				3FB0FEAC1B22F9AD00ED83B7 /* MBProgressHUD */,
@@ -558,6 +579,7 @@
 		003466C91AF7418C003BF7E8 /* viewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3FEB6F7B1B257C8400C1D96F /* 收藏 */,
 				3FB0FEC61B2325EC00ED83B7 /* 关于我们 */,
 				3FB0FE981B22EF0300ED83B7 /* 自定义控制器 */,
 				3F094CFD1B22EE1A0037D3F4 /* 更多 */,
@@ -572,6 +594,7 @@
 		003466CB1AF74276003BF7E8 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				3FEB6F7F1B257D1A00C1D96F /* like */,
 				00368E9D1B23F8060013B1A1 /* shareImage */,
 				00BF941D1B235068003D0709 /* app_icon */,
 				3FB0FE9F1B22F3D500ED83B7 /* MoreImage */,
@@ -736,6 +759,8 @@
 			children = (
 				0034A67F1AF78A15003BF7E8 /* Const.h */,
 				0034A6891AF78FE5003BF7E8 /* NetApi.h */,
+				3FEB6F8F1B258D1B00C1D96F /* ConstNSNotification.h */,
+				3FEB6F901B258D1B00C1D96F /* ConstNSNotification.m */,
 			);
 			name = const;
 			path = Image/const;
@@ -1177,6 +1202,37 @@
 			path = "关于我们";
 			sourceTree = "<group>";
 		};
+		3FEB6F7B1B257C8400C1D96F /* 收藏 */ = {
+			isa = PBXGroup;
+			children = (
+				3FEB6F7C1B257CD100C1D96F /* CollectViewController.h */,
+				3FEB6F7D1B257CD100C1D96F /* CollectViewController.m */,
+			);
+			path = "收藏";
+			sourceTree = "<group>";
+		};
+		3FEB6F7F1B257D1A00C1D96F /* like */ = {
+			isa = PBXGroup;
+			children = (
+				3FEB6F801B257D1A00C1D96F /* like_nomoal@2x.png */,
+				3FEB6F811B257D1A00C1D96F /* like_nomoal@3x.png */,
+				3FEB6F821B257D1A00C1D96F /* like_slected@2x.png */,
+				3FEB6F831B257D1A00C1D96F /* like_slected@3x.png */,
+			);
+			path = like;
+			sourceTree = "<group>";
+		};
+		3FEB6F881B2581FD00C1D96F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3FEB6F891B25820E00C1D96F /* UIBarButtonItem+Extension.h */,
+				3FEB6F8A1B25820E00C1D96F /* UIBarButtonItem+Extension.m */,
+				3FEB6F8C1B2582ED00C1D96F /* UIView+Extension.h */,
+				3FEB6F8D1B2582ED00C1D96F /* UIView+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		8544BFEB7C84F49E5212E39F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1277,6 +1333,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FEB6F861B257D1A00C1D96F /* like_slected@2x.png in Resources */,
+				3FEB6F871B257D1A00C1D96F /* like_slected@3x.png in Resources */,
 				3F11988E1B24455200E16130 /* AboutMeController.xib in Resources */,
 				00F4F7A51AF7C0DD0090492D /* feed_tab_butten_normal@3x.png in Resources */,
 				00F4F7BE1AF7C0DD0090492D /* opened_liked_icon@3x.png in Resources */,
@@ -1321,9 +1379,11 @@
 				00F4F7AC1AF7C0DD0090492D /* me_tab_butten_press.png in Resources */,
 				00F4F7B21AF7C0DD0090492D /* movie_tab_butten_press.png in Resources */,
 				00BF942A1B235068003D0709 /* icon_1024.png in Resources */,
+				3FEB6F851B257D1A00C1D96F /* like_nomoal@3x.png in Resources */,
 				00F4F7A91AF7C0DD0090492D /* me_tab_butten_normal.png in Resources */,
 				3FB0FEA81B22F3D500ED83B7 /* navigationbar_more_disable.png in Resources */,
 				00368EAA1B23F8060013B1A1 /* wechat_share_icon@2x.png in Resources */,
+				3FEB6F841B257D1A00C1D96F /* like_nomoal@2x.png in Resources */,
 				00F4F7BD1AF7C0DD0090492D /* opened_liked_icon@2x.png in Resources */,
 				00BF942D1B235068003D0709 /* icon_28 copy.png in Resources */,
 				3FB0FEAB1B22F3D500ED83B7 /* navigationbar_more_highlighted@3x.png in Resources */,
@@ -1403,6 +1463,7 @@
 				0034A5431AF742EB003BF7E8 /* UIButton+WebCache.m in Sources */,
 				0034A52E1AF742EB003BF7E8 /* AFURLConnectionOperation.m in Sources */,
 				004721A61AFA1D8700CC75FD /* MMProgressHUD+Class.m in Sources */,
+				3FEB6F7E1B257CD100C1D96F /* CollectViewController.m in Sources */,
 				00D20DF21B21CF2600E88004 /* NewTableViewCell.m in Sources */,
 				003BE59F1AF67FBA00BBD229 /* SecondViewController.m in Sources */,
 				0034A5331AF742EB003BF7E8 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
@@ -1430,6 +1491,7 @@
 				0047218C1AFA08F600CC75FD /* Helper.m in Sources */,
 				004721A31AFA1D8700CC75FD /* MMHud.m in Sources */,
 				3F1198DF1B246A1F00E16130 /* MJType.m in Sources */,
+				3FEB6F8B1B25820E00C1D96F /* UIBarButtonItem+Extension.m in Sources */,
 				0034A5411AF742EB003BF7E8 /* SDWebImageManager.m in Sources */,
 				0034A53C1AF742EB003BF7E8 /* SDImageCache.m in Sources */,
 				004721851AF9E07800CC75FD /* M80AttributedLabel.m in Sources */,
@@ -1438,6 +1500,8 @@
 				003BE56C1AF677EE00BBD229 /* ViewController.m in Sources */,
 				003BE5961AF6781700BBD229 /* UIViewController+MMDrawerController.m in Sources */,
 				3F1198DD1B246A1F00E16130 /* MJFoundation.m in Sources */,
+				3FEB6F911B258D1B00C1D96F /* ConstNSNotification.m in Sources */,
+				3FEB6F8E1B2582ED00C1D96F /* UIView+Extension.m in Sources */,
 				0034A53F1AF742EB003BF7E8 /* SDWebImageDownloader.m in Sources */,
 				0034A52D1AF742EB003BF7E8 /* AFSecurityPolicy.m in Sources */,
 				3F1198DC1B246A1F00E16130 /* MJConst.m in Sources */,

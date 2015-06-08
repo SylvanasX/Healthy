@@ -16,6 +16,7 @@
 #import "newModel.h"
 #import "NewTableViewCell.h"
 #import "NewModelTool.h"
+#import "ConstNSNotification.h"
 @interface MyViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, weak) UITableView *tableView;
@@ -30,12 +31,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor =View_BackGround;
+    self.title = @"收藏";
     // 添加tableView
     [self setupTableView];
     // 从数据库中加载数据
     [self loadDataFromDB];
     // 刷新tableView
     [self.tableView reloadData];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(collectChange:) name:collectNSNotification object:nil];
+}
+
+- (void)collectChange:(NSNotification *)notification {
+//    NSDictionary *userInfo = notification.userInfo;
+//    newModel *model = userInfo[collectModel];
+//    if ([userInfo[isCollectKey] boolValue]) {
+//        [self.models insertObject:model atIndex:0];
+//    } else {
+//        [self.models removeObject:model];
+//    }
+//    [self.tableView reloadData];
+    [self.models removeAllObjects];
+    self.page = 0;
+    [self loadDataFromDB];
 }
 
 - (void)setupTableView {
@@ -79,6 +96,10 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 100;
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 

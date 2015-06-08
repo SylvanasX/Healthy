@@ -14,5 +14,9 @@
     
 }
 
+- (BOOL)isEqual:(newModel *)model {
+    return [self.Id isEqualToString:model.Id];
+}
+
 MJCodingImplementation
 @end

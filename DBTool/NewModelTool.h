@@ -16,4 +16,8 @@
 + (void)saveNewModel:(newModel *)model;
 
 + (NSArray *)newModelsFromDB:(int)page;
+
++ (BOOL)isCollected:(newModel *)model;
+
++ (void)removeNewModel:(newModel *)model;
 @end
