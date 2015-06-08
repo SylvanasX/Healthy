@@ -17,6 +17,7 @@
 #import "NewTableViewCell.h"
 #import "NewModelTool.h"
 #import "ConstNSNotification.h"
+#import "NeDetailViewController.h"
 @interface MyViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, weak) UITableView *tableView;
@@ -100,6 +101,21 @@
 
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NeDetailViewController *newVc=[[NeDetailViewController alloc]init];
+    newModel  *model;
+    model = self.models[indexPath.row];
+    newVc.pageType=NSDetailPageTypeNewListController;
+    newVc.detailId=model.Id;
+    newVc.detailName=model.title;
+    newVc.listModel = model;
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:nil action:nil];
+    self.navigationItem.backBarButtonItem = backItem;
+    
+    [self.navigationController pushViewController:newVc animated:YES];
 }
 
 
